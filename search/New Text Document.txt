@@ -1,0 +1,9 @@
+- what are props in react.js?
+React Props are like function arguments in JavaScript and attributes in HTML.
+To send props into a component, use the same syntax as HTML attributes
+
+- are props and function parameters the same thing?
+Moving from vanilla JavaScript to React can be a difficult mental lift for most beginner programmers. However, a lot of the mystique can be chocked up to syntactical differences, especially when it comes to the concept of props. Keep these two things in mind if you get thrown by React's props:
+It's just a parameter. React's syntax may obscure that, but it's always just a parameter.
+It's just an object. And like all other JavaScript objects, it consists of key-value pairs. React has you build that object in an unconventional way, but it's always just an object.
+To help demystify React's props, I'm going to compare a vanilla JavaScript function with a React component. I'll demonstrate how they're built and invoked to emphasize their similarities and differences. Each main function will take a dog object as a parameter, then display something about that dog. And each main function will then be called in another function that will display information about many dogs. I'll also provide a mocked up data file with info about a few dogs, which will be used in both scenarios. For simplicity, assume all files are in the same folder, and that in both scenarios, there exists a main app file that imports and invokes the parent function to finally render the info. Try to ignore the document.createElements in the vanilla functions (they're only included to make the examples more parallel) and instead focus on the props.
